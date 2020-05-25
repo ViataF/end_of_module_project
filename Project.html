@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Profiles</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- Css library -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="bootstrap-4.1.3-dist (1)\css\bootstrap.min.css"
+    />
+    <!-- Personal CSS code -->
+    <link rel="stylesheet" href="project.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Navigation bar starts -->
+      <nav
+        class="navbar navbar-expand-lg navbar-collapse-sm navbar-light bg-light"
+      >
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="Project.html">
+          <i class="far fa-address-card"></i>
+          User Profiles
+        </a>
+        <!-- Toggler/collapsibe Button  -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News Feed</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Admin</a>
+            </li>
+          </ul>
+          <!-- Search bar moved to the right -->
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-3 justify-content"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 mr-sm-0" type="submit">
+              Search
+            </button>
+            <button
+              class="btn btn-outline-primary my-2 mr-sm-0"
+              type="button"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              Create profile
+            </button>
+          </form>
+        </div>
+      </nav>
+      <!-- navigation bar ends -->
+
+      <h1 class="text-white">Meet the team</h1>
+    </header>
+    <!-- carousel slide start -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <!-- Inside the carousel -->
+      <div class="carousel-inner">
+        <!-- carousel item 1 -->
+        <div class="carousel-item active">
+          <!-- card 1 start -->
+          <div class="card">
+            <img
+              class="card-img-top"
+              data-toggle="modal"
+              data-target="#user1"
+              src="https://images.pexels.com/photos/37533/studio-portrait-woman-face-37533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            />
+            <div class="card-header bg-danger">
+              <h4 class="card-title">Christine Devin</h4>
+              <p class="card-subtitle">Contact details:</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Email: christine.d@gmail.com</li>
+              <li class="list-group-item">Cell Number: 074-357-8901</li>
+              <li class="list-group-item">Tel Number: 021-765-9431</li>
+            </ul>
+            <!-- card body  -->
+            <div class="card-footer">
+              <!-- Button toggle Modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#user1"
+              >
+                More details
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-toggle="modal"
+                data-target="#delete"
+              >
+                Delete
+              </button>
+              <!-- Botton end -->
+            </div>
+            <!-- end card footer -->
+          </div>
+          <!-- card 1 end -->
+        </div>
+
+        <!-- carousel-item 2 -->
+        <div class="carousel-item">
+          <!-- card 2 start -->
+          <div class="card">
+            <img
+              class="card-img-top"
+              data-toggle="modal"
+              data-target="#user2"
+              src="https://images.pexels.com/photos/1601/black-and-white-man-person-musician.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            />
+            <div class="card-header bg-primary">
+              <h4 class="card-title">Abdul-Mullins</h4>
+              <p class="card-subtitle">Contact details:</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Email: abdulmullins@gmail.com</li>
+              <li class="list-group-item">Cell Number: 074-357-8901</li>
+              <li class="list-group-item">Landline Number: 021-765-9431</li>
+            </ul>
+            <div class="card-body">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#user2"
+              >
+                More details
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-toggle="modal"
+                data-target="#delete"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+          <!-- card 2 end  -->
+        </div>
+        <!-- end carousel item 2 -->
+
+        <!-- carousel item 3-->
+        <div class="carousel-item">
+          <div class="card">
+            <img
+              class="card-img-top"
+              data-toggle="modal"
+              data-target="#user3"
+              src="https://images.pexels.com/photos/108157/pexels-photo-108157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            />
+            <div class="card-header bg-warning">
+              <h3 class="card-title">Craig Everyday</h3>
+              <p class="card-subtitle">Contact details:</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Email: craig.everyday@gmail.com</li>
+              <li class="list-group-item">Cell Number: 074-357-8901</li>
+              <li class="list-group-item">Landline Number: 021-765-9431</li>
+            </ul>
+            <div class="card-body">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#user3"
+              >
+                More details
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-toggle="modal"
+                data-target="#delete"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- carousel item 4 start -->
+        <div class="carousel-item">
+          <!-- card 4  -->
+          <div class="card">
+            <img
+              class="card-img-top"
+              data-toggle="modal"
+              data-target="#user4"
+              src="https://images.pexels.com/photos/109851/pexels-photo-109851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            />
+            <div class="card-header bg-success">
+              <h3 class="card-title">Jessica Aston</h3>
+              <p class="card-subtitle">Contact details:</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Email: jessica.aston@gmail.com</li>
+              <li class="list-group-item">Cell Number: 074-357-8901</li>
+              <li class="list-group-item">Landline Number: 021-765-9431</li>
+            </ul>
+            <div class="card-body">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#user4"
+              >
+                More details
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-toggle="modal"
+                data-target="#delete"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+          <!-- card 4 end -->
+        </div>
+        <!-- carousel item 4 end -->
+      </div>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <aside>
+      <h2>Create your own profile today</h2>
+      <button
+        class="btn btn-outline-primary"
+        type="button"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Create profile
+      </button>
+    </aside>
+    <!-- The Modal new user -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Register now</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <!-- Form starts -->
+            <form action="#" class="was-validated" novalidate>
+              <div class="form-group">
+                <label for="pic">Profile Picture:</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="pic"
+                  placeholder="Upload an image"
+                  name="pic"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="fname">First name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fname"
+                  placeholder="Enter first name"
+                  name="fname"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lname"
+                  placeholder="Enter last name"
+                  name="lname"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                  name="email"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="cell">Cellphone number: </label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="cell"
+                  placeholder="074-340-5370"
+                  name="cell"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="tel">Landline number:</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="tel"
+                  placeholder="021-237-9785"
+                  name="tel"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="address">Home address:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lname"
+                  placeholder="Enter home adress"
+                  name="address"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="kin">Next of kin name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="text"
+                  placeholder="Enter kin name"
+                  name="text"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="krelations">Next of kin relationship: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="krelations"
+                  placeholder="Enter kin relationship"
+                  name="krelations"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="ktel">Kin: Cellphone number:</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="ktel"
+                  placeholder="082-237-9785"
+                  name="ktel"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="kemail">Kin: Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="kemail"
+                  placeholder="Enter kin email"
+                  name="kemail"
+                  required
+                />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+            </form>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+            <button type="submit" class="btn btn-primary" data-dismiss="modal">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal user 1 -->
+    <div class="modal fade" id="user1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Profile information</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>Home address: 44 Vine Road, Kensington</p>
+            <p>Next of kin name: Maurice Lavender</p>
+            <p>Next of kin relationship: Husband</p>
+            <p>Next of kin cellphone number: 064 536 2540</p>
+            <p>Next of kin email: maurice.lavender@gmail.com</p>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal user 2 -->
+    <div class="modal fade" id="user2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Profile information</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>Home address: 72 Seabay, Landsdowne</p>
+            <p>Next of kin name: Lance Ryan</p>
+            <p>Next of kin relationship: Brother</p>
+            <p>Next of kin cellphone number: 074 536 3420</p>
+            <p>Next of kin email: lance.ryan@gmail.com</p>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal user 3 -->
+    <div class="modal fade" id="user3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Profile information</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>Home address: 52 Dolly str, Somerset West</p>
+            <p>Next of kin name: Justin Carter</p>
+            <p>Next of kin relationship: Paster</p>
+            <p>Next of kin cellphone number: 062 345 270</p>
+            <p>Next of kin email:justin.carter@gmail.com</p>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal user 4 -->
+    <div class="modal fade" id="user4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Profile information</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>Home address: 23 Church Str, Daggaraad</p>
+            <p>Next of kin name: James Arthur</p>
+            <p>Next of kin relationship: Son</p>
+            <p>Next of kin cellphone number: 082 536 9764</p>
+            <p>Next of kin email: james.arthur@gmail.com</p>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal delete card -->
+    <div class="modal fade" id="delete">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Delete Profile</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            Are sure you want to delete this profile?
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              yes
+            </button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              no
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      Posted by: Viata Fredericks
+      <p>
+        Contact information:
+        <a href="mailto:someone@example.com"> viataruth@gmail.com</a>.
+      </p>
+    </footer>
+  </body>
+</html>

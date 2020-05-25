@@ -1,0 +1,94 @@
+/* Background  */
+body{
+    background-image: url(https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* navbar */
+nav{
+    justify-content: flex-end;
+}
+
+/* heading */
+h1{
+    font-family: serif;
+    font-weight: 800-extra bold;
+    text-align: center;
+    margin-top: 1vw;
+    font-stretch: wider;
+    font-size: 5vw;
+    color: whitesmoke;
+}   
+/* indicator shows what slide you at */
+.carousel-indicators {
+    position: relative;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    top: 10px;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 10px;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+
+/* card image */
+img.card-img-top{
+    width: 100%;
+    height: 40%;
+
+}
+/* hover  */
+.carousel-item:hover {
+    box-shadow: 0 15px 20px 0 rgba(7, 255, 172, 0.1), 0 17px 50px 0 rgba(0,0,0,0.2);
+  }
+/* Card dimensions */
+.card{
+    font-size: 2vw;
+    transition: 0.3s;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+/* carousel sizing */
+.carousel-inner{
+    width: 100%;
+    padding:0px 25vw 5vh;
+}
+/* modal background image */
+#myModal{
+    background-image: url(https://images.pexels.com/photos/255464/pexels-photo-255464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) ;
+}
+.modal-content{
+    opacity: 0.9;
+}
+label{
+    float: left;
+    color: black;
+
+}
+/* heading  */
+aside{
+    font-family: serif;
+    font-weight: 800-extra bold;
+    font-size: 5vh 3vw;
+    font: 900;
+    text-align: center;
+    margin: 0vh 25vw 10vh; 
+    font-stretch: wider;
+    color: whitesmoke;
+    padding: 2vh;
+}
+/* footer */
+footer{
+    display: block;
+     background-color: rgb(221, 221, 221);
+}
